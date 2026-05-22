@@ -98,7 +98,7 @@ a {
 }
 .hero .title {
     color: #000336;
-    font-size: 6.4rem;
+    font-size: 6.2rem; /* ban đầu là 6.4 nhwung mà font bị lỗi không giống thiết kế nên chúng ta giảm font size xuống để cho nó có thể giống thiết kế */
     font-style: normal;
     font-weight: 700;
     line-height: 1.18; /* 118.75% */
