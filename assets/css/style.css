@@ -126,3 +126,29 @@ a {
 
     bottom: 0;
 }
+
+
+/* CLIENTS */
+.clients {
+    margin-top: 122px;
+}
+.clients .row {
+    display:flex;
+    justify-content: space-between;  /* su dung thay cho mla cung duoc de xiu nua se thua ke cho cai sau trong ban thiet ke*/
+}
+.clients .desc {
+    color: #7D8589;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25; /* 125% */
+}
+.clients .row-desc {
+    margin-top: 23px;
+}
+.clients .images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+}
