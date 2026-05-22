@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --primary-color: #0F1B4C;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+/* common */
+.btn {
+    display:inline-block;
+    min-width: 98px; /*không nên xài width mà nên xài min-width vì đôi khi có thể kí tự dài hơn*/
+    /* height: 40px; nên sử dụng padding khi làm chiều cao thì nó sẽ oke hơn đối với nút bấm */
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 18px 11px; /* cai nay la btn dung chung nen phai de la 50, f12 ra roi chinh sao cho oke roi moi code vo day, xai 50px boi vi chieu cao cao nhat cua cac nut xai chung la 50*/
+}
+a {
+    text-decoration: none;
+}
+.content { 
+    width: 1110px;
+    max-width: calc(100% - 48px ); /*khi ma no be hon 100% thi minh thu keo no se an theo trinh duyet mac dinh tuy nhien lam vay no sat le thi se xau nen la lay 100 -24 ben trai +24 ben phai la 48 */
+    margin-left: auto;
+    margin-right: auto; 
+    /* dùng chung thì không nên set thuộc tính cứng vào nên xài mr và ml auto vì khi xem thiết kế thì nó là 1110px ở trên cũng vậy và ở dưới cũng vậy */
+}
+/*HEADER*/
+.header {
+    height: 100vh;
+    background: #E6F0FF;
+}
+.navbar {
+    display:flex;
+    align-items: center; 
+    /* cho các nav ở trên ra giữa cho dễ căn */
+ /* margin-top: 50px;  Phần này bị margin collapse nên nó sẽ đẩy cái background ở trên xuống vì vậy muốn giải quyết thì phải thêm padding vô là nó sẽ oke  */
+    padding-top: 50px;
+}
+.navbar ul {
+    display:flex;
+    margin-left: 50px;  /*DO CỘNG THÊM CÁI PADDNG Ở DƯỚI LÀ 14 MÀ KHOẢNG CÁCH LÀ 64 NÊN LẤY 64-14=50PX */
+}
+.navbar .action {
+    margin-left: auto;
+}
+.navbar ul a {
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;   
+    padding:8px 14px;
+  /* nên tăng vùng bấm cho người dùng trên phần navbar */
+}
+.navbar .action-link {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;  
+}
+ .navbar .action-btn {
+    padding:13px 11px;
+    margin-left: 18px;
+}
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+.btn:hover {
+    opacity:0.9;
+}
