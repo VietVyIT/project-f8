@@ -75,3 +75,32 @@ a {
 .btn:hover {
     opacity:0.9;
 }
+/* PHAN HERO */
+.hero {
+    margin-top: 130px; /* vì cái navbar cái cao nhất là cái nut bam sign up nên mình phải đo từ cái đầu của phần hero lên xem coi cao bao nhiêu để viết cho chuẩn */
+
+}
+.hero .info {
+    width: 51%; /* cả phần hero info này có kích thước là 559 nhma đang nằm trong content 1110px nên ko được vì vậy lấy content / info rồi nhân với 100 là sẽ ra được % */
+
+}
+.hero .sub-title {
+    /* color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.5; */
+    color: #687690;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+.hero .title {
+    color: #000336;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.18; /* 118.75% */
+    margin-top: 8px; /*cach nhau voi lai cai sub-title trong thiet ke*/
+}
