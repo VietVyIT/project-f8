@@ -44,7 +44,7 @@ a {
     align-items: center; 
     /* cho các nav ở trên ra giữa cho dễ căn */
  /* margin-top: 50px;  Phần này bị margin collapse nên nó sẽ đẩy cái background ở trên xuống vì vậy muốn giải quyết thì phải thêm padding vô là nó sẽ oke  */
-    padding-top: 50px;
+    padding-top: 38px;
 }
 .navbar ul {
     display:flex;
