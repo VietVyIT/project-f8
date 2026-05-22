@@ -36,6 +36,7 @@ a {
 }
 /*HEADER*/
 .header {
+    position:relative;
     height: 100vh;
     background: #E6F0FF;
 }
@@ -103,4 +104,25 @@ a {
     font-weight: 700;
     line-height: 1.18; /* 118.75% */
     margin-top: 8px; /*cach nhau voi lai cai sub-title trong thiet ke*/
+}
+.hero .desc {
+    color: #5A6473;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 30px;
+}
+.hero-cta {
+    min-width: 170px;
+    margin-top: 40px;
+}
+.hero-img {
+    position:absolute;
+  /* right: 65px;  không đúng, vì bây giờ đặt cứng như vậy thì nó sẽ dư ra nhiều khoảng và màn hình lớn hơn 1440 thì nó sẽ không đảm bảo kích thước */
+  /* lấy tổng kích thước chiều ngang là 100vw - 1110px thì ra được khoảng dư bên trái và bên phải và chúng ta chia 2 ra là sẽ được, chugns ta sẽ định vị được cái ảnh bằng nút sign up*/
+  right: calc((100vw - 1110px ) / 2 - 100px );
+/* bây giờ sẽ tạo được kết quả từ cái chân gióng thẳng lên là oke rồi, nhma bây giờ phải tính coi nó chạy qua bên phải bao nhiêu nó mới chuẩn thiết kế, bấm vô sign up đo trong thiết kế là 165px còn cái ngôi nhà thì là 65px thì lấy 165-65 là 100px ngôi nhà sẽ chạy sang bên phải 100px nữa là oke*/
+
+    bottom: 0;
 }
