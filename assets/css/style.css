@@ -216,7 +216,7 @@ a {
   font-weight: 600;
   margin-top: 10px;
 }
-.guide-item .around {
+.guide-item .arrow {
   margin-left: 6px;
 }
 .guide-cta {
@@ -226,4 +226,37 @@ a {
 }
 .guide-cta .btn {
   min-width: 170px;
+}
+
+/* ==== FEATURE ==== */
+.featured .sub-title {
+  color: #000339;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+.featured .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.featured .desc {
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.87; /* 187.5% */
+}
+.featured .link {
+  display: flex;
+  align-items: center; /* làm cho cái mũi tên nó ở giữa trục */
+  color: #0689ff;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/* .featured .link .arrow {
+  position: relative;
+  top: -2px;
+} có thể căn theo cái này để làm mũi tên giữa trục */
+.featured .link .arrow {
+  margin-left: 8px;
 }
