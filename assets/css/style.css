@@ -1,154 +1,228 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 :root {
-    --primary-color: #0F1B4C;
+  --primary-color: #0f1b4c;
 }
 body {
-    font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
 }
 /* common */
 .btn {
-    display:inline-block;
-    min-width: 98px; /*không nên xài width mà nên xài min-width vì đôi khi có thể kí tự dài hơn*/
-    /* height: 40px; nên sử dụng padding khi làm chiều cao thì nó sẽ oke hơn đối với nút bấm */
-    border-radius: 8px;
-    background: var(--primary-color);
-    color: #FFF;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: 500;
-    padding: 18px 11px; /* cai nay la btn dung chung nen phai de la 50, f12 ra roi chinh sao cho oke roi moi code vo day, xai 50px boi vi chieu cao cao nhat cua cac nut xai chung la 50*/
+  display: inline-block;
+  min-width: 98px; /*không nên xài width mà nên xài min-width vì đôi khi có thể kí tự dài hơn*/
+  /* height: 40px; nên sử dụng padding khi làm chiều cao thì nó sẽ oke hơn đối với nút bấm */
+  border-radius: 8px;
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 18px 11px; /* cai nay la btn dung chung nen phai de la 50, f12 ra roi chinh sao cho oke roi moi code vo day, xai 50px boi vi chieu cao cao nhat cua cac nut xai chung la 50*/
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.content { 
-    width: 1110px;
-    max-width: calc(100% - 48px ); /*khi ma no be hon 100% thi minh thu keo no se an theo trinh duyet mac dinh tuy nhien lam vay no sat le thi se xau nen la lay 100 -24 ben trai +24 ben phai la 48 */
-    margin-left: auto;
-    margin-right: auto; 
-    /* dùng chung thì không nên set thuộc tính cứng vào nên xài mr và ml auto vì khi xem thiết kế thì nó là 1110px ở trên cũng vậy và ở dưới cũng vậy */
+.content {
+  width: 1110px;
+  max-width: calc(
+    100% - 48px
+  ); /*khi ma no be hon 100% thi minh thu keo no se an theo trinh duyet mac dinh tuy nhien lam vay no sat le thi se xau nen la lay 100 -24 ben trai +24 ben phai la 48 */
+  margin-left: auto;
+  margin-right: auto;
+  /* dùng chung thì không nên set thuộc tính cứng vào nên xài mr và ml auto vì khi xem thiết kế thì nó là 1110px ở trên cũng vậy và ở dưới cũng vậy */
 }
 /*HEADER*/
 .header {
-    position:relative;
-    height: 100vh;
-    background: #E6F0FF;
+  position: relative;
+  height: 100vh;
+  background: #e6f0ff;
 }
 .navbar {
-    display:flex;
-    align-items: center; 
-    /* cho các nav ở trên ra giữa cho dễ căn */
- /* margin-top: 50px;  Phần này bị margin collapse nên nó sẽ đẩy cái background ở trên xuống vì vậy muốn giải quyết thì phải thêm padding vô là nó sẽ oke  */
-    padding-top: 38px;
+  display: flex;
+  align-items: center;
+  /* cho các nav ở trên ra giữa cho dễ căn */
+  /* margin-top: 50px;  Phần này bị margin collapse nên nó sẽ đẩy cái background ở trên xuống vì vậy muốn giải quyết thì phải thêm padding vô là nó sẽ oke  */
+  padding-top: 38px;
 }
 .navbar ul {
-    display:flex;
-    margin-left: 50px;  /*DO CỘNG THÊM CÁI PADDNG Ở DƯỚI LÀ 14 MÀ KHOẢNG CÁCH LÀ 64 NÊN LẤY 64-14=50PX */
+  display: flex;
+  margin-left: 50px; /*DO CỘNG THÊM CÁI PADDNG Ở DƯỚI LÀ 14 MÀ KHOẢNG CÁCH LÀ 64 NÊN LẤY 64-14=50PX */
 }
 .navbar .action {
-    margin-left: auto;
+  margin-left: auto;
 }
 .navbar ul a {
-    color: #4F5361;
-    font-size: 1.4rem;
-    font-weight: 500;   
-    padding:8px 14px;
+  color: #4f5361;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 8px 14px;
   /* nên tăng vùng bấm cho người dùng trên phần navbar */
 }
 .navbar .action-link {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    font-weight: 500;  
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
- .navbar .action-btn {
-    padding:13px 11px;
-    margin-left: 18px;
+.navbar .action-btn {
+  padding: 13px 11px;
+  margin-left: 18px;
 }
 .navbar ul a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .btn:hover {
-    opacity:0.9;
+  opacity: 0.9;
 }
 /* PHAN HERO */
 .hero {
-    margin-top: 130px; /* vì cái navbar cái cao nhất là cái nut bam sign up nên mình phải đo từ cái đầu của phần hero lên xem coi cao bao nhiêu để viết cho chuẩn */
-
+  margin-top: 130px; /* vì cái navbar cái cao nhất là cái nut bam sign up nên mình phải đo từ cái đầu của phần hero lên xem coi cao bao nhiêu để viết cho chuẩn */
 }
 .hero .info {
-    width: 51%; /* cả phần hero info này có kích thước là 559 nhma đang nằm trong content 1110px nên ko được vì vậy lấy content / info rồi nhân với 100 là sẽ ra được % */
-
+  width: 51%; /* cả phần hero info này có kích thước là 559 nhma đang nằm trong content 1110px nên ko được vì vậy lấy content / info rồi nhân với 100 là sẽ ra được % */
 }
 .hero .sub-title {
-    /* color: #687690;
+  /* color: #687690;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: 0.01em;
     line-height: 1.5; */
-    color: #687690;
-    font-size: 1.8rem;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.18px;
+  color: #687690;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.18px;
 }
 .hero .title {
-    color: #000336;
-    font-size: 6.2rem; /* ban đầu là 6.4 nhwung mà font bị lỗi không giống thiết kế nên chúng ta giảm font size xuống để cho nó có thể giống thiết kế */
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.18; /* 118.75% */
-    margin-top: 8px; /*cach nhau voi lai cai sub-title trong thiet ke*/
+  color: #000336;
+  font-size: 6.2rem; /* ban đầu là 6.4 nhwung mà font bị lỗi không giống thiết kế nên chúng ta giảm font size xuống để cho nó có thể giống thiết kế */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.18; /* 118.75% */
+  margin-top: 8px; /*cach nhau voi lai cai sub-title trong thiet ke*/
 }
 .hero .desc {
-    color: #5A6473;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-    margin-top: 30px;
+  color: #5a6473;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 30px;
 }
 .hero-cta {
-    min-width: 170px;
-    margin-top: 40px;
+  min-width: 170px;
+  margin-top: 40px;
 }
 .hero-img {
-    position:absolute;
+  position: absolute;
   /* right: 65px;  không đúng, vì bây giờ đặt cứng như vậy thì nó sẽ dư ra nhiều khoảng và màn hình lớn hơn 1440 thì nó sẽ không đảm bảo kích thước */
   /* lấy tổng kích thước chiều ngang là 100vw - 1110px thì ra được khoảng dư bên trái và bên phải và chúng ta chia 2 ra là sẽ được, chugns ta sẽ định vị được cái ảnh bằng nút sign up*/
-  right: calc((100vw - 1110px ) / 2 - 100px );
-/* bây giờ sẽ tạo được kết quả từ cái chân gióng thẳng lên là oke rồi, nhma bây giờ phải tính coi nó chạy qua bên phải bao nhiêu nó mới chuẩn thiết kế, bấm vô sign up đo trong thiết kế là 165px còn cái ngôi nhà thì là 65px thì lấy 165-65 là 100px ngôi nhà sẽ chạy sang bên phải 100px nữa là oke*/
+  right: calc((100vw - 1110px) / 2 - 100px);
+  /* bây giờ sẽ tạo được kết quả từ cái chân gióng thẳng lên là oke rồi, nhma bây giờ phải tính coi nó chạy qua bên phải bao nhiêu nó mới chuẩn thiết kế, bấm vô sign up đo trong thiết kế là 165px còn cái ngôi nhà thì là 65px thì lấy 165-65 là 100px ngôi nhà sẽ chạy sang bên phải 100px nữa là oke*/
 
-    bottom: 0;
+  bottom: 0;
 }
-
 
 /* CLIENTS */
 .clients {
-    margin-top: 122px;
+  margin-top: 122px;
 }
 .clients .row {
-    display:flex;
-    justify-content: space-between;  /* su dung thay cho mla cung duoc de xiu nua se thua ke cho cai sau trong ban thiet ke*/
+  display: flex;
+  justify-content: space-between; /* su dung thay cho mla cung duoc de xiu nua se thua ke cho cai sau trong ban thiet ke*/
 }
 .clients .desc {
-    color: #7D8589;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.25; /* 125% */
+  color: #7d8589;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25; /* 125% */
 }
 .clients .row-desc {
-    margin-top: 23px;
+  margin-top: 23px;
 }
 .clients .images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 96px;
+}
+
+/* ==== GUIDES ====  */
+.guides {
+  margin-top: 200px;
+}
+.guides .sub-title {
+  position: relative;
+  color: #000339;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+.guides .sub-title::before {
+  content: "";
+  display: inline-block;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+  position: absolute;
+  top: -10px;
+  left: 50%; /* cho cái dấu gạch ngang trên đầu cho cạnh trái nằm qua bên chính giữa lệch qua bên phải một xíu nên phải chạy lại một tí và xài transform*/
+  transform: translate(-50%);
+}
+.guides .desc {
+  color: #5a6473;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.88; /* 187.5% */
+  margin-top: 20px;
+  width: 459px; /* set do rong cho giong thiet ke*/
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.list-guide {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.guide-item {
+  margin: 0 70px;
+  text-align: center;
+}
+.guide-item .title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.1; /* 110% */
+  margin-top: 26px;
+}
+.guide-item .link {
+  display: inline-block; /* vì a là inline nên xài margin top ko được phải xài cái này */
+  color: #0689ff;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.guide-item .around {
+  margin-left: 6px;
+}
+.guide-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.guide-cta .btn {
+  min-width: 170px;
 }
