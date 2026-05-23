@@ -16,7 +16,7 @@ body {
   display: inline-block;
   min-width: 98px; /*không nên xài width mà nên xài min-width vì đôi khi có thể kí tự dài hơn*/
   /* height: 40px; nên sử dụng padding khi làm chiều cao thì nó sẽ oke hơn đối với nút bấm */
-  border-radius: 8px;
+  border-radius: 12px; /* sửa lại kích thước từ 8 lên 12px*/
   background: var(--primary-color);
   color: #fff;
   text-align: center;
@@ -71,6 +71,7 @@ a {
 .navbar .action-btn {
   padding: 13px 11px;
   margin-left: 18px;
+  border-radius: 8px; /* thuộc tính riêng sau khi thay đổi */
 }
 .navbar ul a:hover {
   text-decoration: underline;
