@@ -229,6 +229,11 @@ a {
 }
 
 /* ==== FEATURE ==== */
+.featured {
+  margin-top: 120px;
+  background: #f5fafe;
+  padding: 110px 0px;
+}
 .featured .sub-title {
   color: #000339;
   font-size: 3.5rem;
@@ -259,4 +264,64 @@ a {
 } có thể căn theo cái này để làm mũi tên giữa trục */
 .featured .link .arrow {
   margin-left: 8px;
+}
+
+/* FEATURED */
+.featured .list {
+  display: flex;
+  margin-top: 70px;
+  gap: 30px; /* tạo khoảng cách giữa các hình */
+}
+.featured .item .thumb {
+  width: 100%;
+  height: 227px; /* chắc chắn ảnh sẽ bị méo đi vì chúng ta ép kích thước của ảnh */
+  object-fit: cover; /* giữ đúng tỉ lệ ảnh và không bị méo khung hình */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.featured .item {
+  flex: 1; /* lúc này tổng kích thước của thẻ cha( thẻ chứa flex) sẽ được chia đều cho các thẻ con */
+  background: #fff;
+  border-radius: 12px; /* thêm thuộc tính này vào để khi bo góc nó sẽ không bị có 1 khoảng trắng ở hình lúc bo */
+}
+.featured .item .body {
+  padding: 17px 20px 24px;
+}
+.featured .item .title {
+  color: #000339;
+  /* text-align: center;  vì thẻ h là thẻ block nên không nên căn giữa, cái này chỉ là figma tự sinh ra thôi */
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1; /* 100% */
+}
+.featured .item .desc {
+  color: #a3a6ab;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 11px;
+}
+.featured .item .info {
+  margin-top: 21px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.featured .item .icon {
+  margin-left: 23px;
+}
+.featured .item .icon:first-child {
+  /* loại icon đầu tiên để nó ko dính thuộc tính ml 23px */
+  margin-left: 0;
+}
+.featured .item .label {
+  margin-left: 8px;
+  color: #4d4d52;
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1; /* 100% */
+  letter-spacing: 0.14px;
 }
