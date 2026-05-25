@@ -241,7 +241,7 @@ a {
 
 /* ==== FEATURE ==== */
 .featured {
-  margin-top: 41px;
+  margin-top: 41px; /* giữ crtl rồi mới trỏ lên thì nó mới ra kích thước thật được, khoảng cách giữa 2 cái là margin còn bên trong nội dung sẽ là padding*/
   background: #f5fafe;
   padding: 110px 0px;
 }
