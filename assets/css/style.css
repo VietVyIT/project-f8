@@ -12,6 +12,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* common */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(
+    --line-clamp,
+    2
+  ); /* không được khai báo thì giá trị mặc định bằng 2*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .btn {
   display: inline-block;
   min-width: 98px; /*không nên xài width mà nên xài min-width vì đôi khi có thể kí tự dài hơn*/
@@ -287,14 +296,16 @@ a {
 .featured .item .body {
   padding: 17px 20px 24px;
 }
-.featured .item .title {
+.featured .item .title a {
   color: #000339;
   /* text-align: center;  vì thẻ h là thẻ block nên không nên căn giữa, cái này chỉ là figma tự sinh ra thôi */
   font-size: 2rem;
   font-weight: 600;
-  line-height: 1; /* 100% */
+  line-height: 1.5; /* 100% */
+  /* làm nhiều dòng quá giới hạn 2 dòng băng cách */
 }
 .featured .item .desc {
+  --line-clamp: 3;
   color: #a3a6ab;
   text-align: center;
   font-size: 1.4rem;
