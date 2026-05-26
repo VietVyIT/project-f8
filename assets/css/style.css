@@ -338,3 +338,61 @@ a {
   line-height: 1; /* 100% */
   letter-spacing: 0.14px;
 }
+
+/* Stats */
+.stats {
+  margin-top: 75px;
+  padding: 50px 0;
+}
+.stats .row {
+  display: flex;
+}
+.stats .content {
+  width: 1017px;
+}
+.stats .img-block,
+.stats .info {
+  width: 50%; /* lấy 520/1017*/
+}
+.stats .info {
+  padding: 79px 0 0 165px;
+}
+.stats .img-block img {
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 460px;
+  object-fit: cover; /* sử dụng để không bị méo ảnh */
+  border-radius: 12px;
+}
+.stats .sub-title {
+  position: relative;
+  width: 269px;
+  color: #000339;
+  font-family: Poppins;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.29; /* 128.571% */
+}
+
+.stats .sub-title::before {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  content: "";
+  display: block; /* phải là block thì mới set width height được */
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+}
+
+.stats .desc {
+  margin-top: 20px;
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.87; /* 187.5% */
+  width: 309px; /* phải set thuộc tính theo thiết kế để điểm xuống hàng giống nhaum như sub-tile cx phải set riêng */
+}
