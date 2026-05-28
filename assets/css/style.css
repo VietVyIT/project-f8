@@ -45,8 +45,16 @@ a {
   margin-right: auto;
   /* dùng chung thì không nên set thuộc tính cứng vào nên xài mr và ml auto vì khi xem thiết kế thì nó là 1110px ở trên cũng vậy và ở dưới cũng vậy */
 }
-/*HEADER*/
-.header {
+.fixed-header {
+  background: #e6f0ff;
+  padding-top: 26px; /* lấy 38-12px ở phần nav vì sau khi cmt lại cái 38 thì nó bị hụt 1 khoảng nên phải bù vào*/
+  position: sticky;
+  top: -26px;
+  z-index: 1;
+}
+
+/*HERO*/
+.hero-wrap {
   position: relative;
   height: 100vh;
   background: #e6f0ff;
@@ -56,7 +64,8 @@ a {
   align-items: center;
   /* cho các nav ở trên ra giữa cho dễ căn */
   /* margin-top: 50px;  Phần này bị margin collapse nên nó sẽ đẩy cái background ở trên xuống vì vậy muốn giải quyết thì phải thêm padding vô là nó sẽ oke  */
-  padding-top: 38px;
+  /* padding-top: 38px; */
+  padding: 12px 0;
 }
 .navbar ul {
   display: flex;
@@ -90,8 +99,10 @@ a {
 }
 /* PHAN HERO */
 .hero {
-  margin-top: 130px; /* vì cái navbar cái cao nhất là cái nut bam sign up nên mình phải đo từ cái đầu của phần hero lên xem coi cao bao nhiêu để viết cho chuẩn */
+  /*bị collapse nên cho thành padding( phần này là phần cải thiện header*/
+  padding-top: 130px; /* vì cái navbar cái cao nhất là cái nut bam sign up nên mình phải đo từ cái đầu của phần hero lên xem coi cao bao nhiêu để viết cho chuẩn */
 }
+
 .hero .info {
   width: 51%; /* cả phần hero info này có kích thước là 559 nhma đang nằm trong content 1110px nên ko được vì vậy lấy content / info rồi nhân với 100 là sẽ ra được % */
 }
