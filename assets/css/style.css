@@ -524,3 +524,68 @@ a {
   bottom: 0;
   right: 221px;
 }
+
+/* Footer */
+.footer {
+  margin-top: 55px;
+  padding: 50px 0 58px;
+}
+.footer .row {
+  display: flex;
+}
+.footer .row-top {
+  gap: 185px;
+}
+.footer .heading {
+  color: #1c1c1d;
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer .list,
+.desc {
+  margin-top: 42px;
+}
+.footer .item {
+  margin-top: 18px;
+}
+.footer .item a,
+.footer .desc {
+  color: #7a7a7e;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.footer .desc {
+  /* ghi đè thuộc tính, ở trên đầu là ké thuộc tính chung ròi còn dưới đây là set thuộc tính riêng */
+  white-space: normal;
+  line-height: 1.75;
+}
+.footer .social {
+  display: flex;
+  margin-top: 40px;
+}
+.footer .social-link {
+  /* vì thẻ này là inline mà df thì ko set được w với h nhma do nó là inline nên set được*/
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.footer .social-link:hover {
+  background-color: #ebebeb;
+}
+.footer .row-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+.footer .copyright {
+  color: #c2c2c2;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
