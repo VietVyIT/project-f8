@@ -160,9 +160,18 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 96px;
+  margin-top: 70px; /* chỉnh lại do cái dưới cho thằng logo kia là thuộc tính height rồi*/
 }
-
+.clients .images a {
+  display: flex;
+  align-items: center;
+  padding: 0 42px;
+  height: 90px; /* ko sd padding trong trường hợp này vì nhìn tke logo cao thấp khác nhau*/
+  border-radius: 12px;
+}
+.clients .images a:hover {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
 /* ==== GUIDES ====  */
 .guides {
   margin-top: 40px;
