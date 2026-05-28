@@ -372,7 +372,7 @@ a {
   padding: 45px 22px 40px;
 }
 .stats-trend .separate {
-  height: 1px;
+  height: 1.2px;
   background: #e9e9e9;
   margin-top: 25px;
 }
@@ -393,6 +393,9 @@ a {
   object-fit: cover; /* xài cái này vừa là để vừa vặn với khung hình cái thứ 2 là không bị méo ảnh */
   border-radius: 50%;
   margin-left: -3px; /* tính phần giao thoa bằng cách đo avt 1 là 16 còn avt 2 là 13 trừ đi nhau là ra */
+}
+.stats .avatar:first-child {
+  margin-left: 0;
 }
 .stats .avtar-1 {
   background: #1f3bb1;
@@ -458,4 +461,66 @@ a {
   font-weight: 400;
   line-height: 1.87; /* 187.5% */
   width: 309px; /* phải set thuộc tính theo thiết kế để điểm xuống hàng giống nhaum như sub-tile cx phải set riêng */
+}
+.stats .row-qty {
+  padding: 0 32px;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+.stats .qty {
+  color: #000;
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+.stats .qty-desc {
+  margin-top: 24px;
+  color: #7b8087;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* subscription */
+.subscription {
+  margin-top: 90px;
+}
+.subscription .body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 370px;
+  border-radius: 20px;
+  background: #063183;
+}
+.subscription .info {
+  width: 671px; /* giới hạn lại để cái title ko xuyên qua ảnh khi tăng cái title lên khi mà nhiều chữ lên có thể xài line-clamp */
+  max-width: 100%;
+  padding: 0px 80px;
+}
+.subscription .sub-title {
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.5; /* 100% */
+}
+
+.subscription .desc {
+  margin-top: 15px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.87; /* 187.5% */
+  opacity: 0.75;
+}
+.subscription .btn {
+  margin-top: 20px;
+  min-width: 151px;
+  background: #fff;
+  color: #002366;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.subscription .image {
+  position: absolute;
+  bottom: 0;
+  right: 221px;
 }
