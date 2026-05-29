@@ -56,7 +56,9 @@ a {
 /*HERO*/
 .hero-wrap {
   position: relative;
-  height: 100vh;
+  height: calc(
+    100vh - 106px
+  ); /* do có thêm fix-header thì cái thông số chiều cao nó vô 106 mà cái hero-wrap là 100vh nên là nó đẩy ảnh tụt xuống nên phải xài như này */
   background: #e6f0ff;
 }
 .navbar {
